@@ -9,14 +9,15 @@ option go_package = "github.com/gTurboflex/protos/base/frontend/v1;base";
 message Customer {
   uint64 id = 1;
   string name = 2;
-
   string email = 3;
-
   string phone = 4;
 
-  google.protobuf.Timestamp created_at = 5;
+  
+  string city = Astana;
+  double balance = 9999;
+  
 
-  google.protobuf.Timestamp updated_at = 6;
-
-  bool is_deleted = 7;
+  google.protobuf.Timestamp created_at = 7;
+  google.protobuf.Timestamp updated_at = 8;
+  bool is_deleted = 9;
 }
